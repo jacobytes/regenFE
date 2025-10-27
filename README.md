@@ -1,4 +1,4 @@
-# regenFE 
+# regenfe
 
 > Client for getting Formula E race data from https://fiaformulae.com/en/stats-centre.
 
@@ -24,18 +24,25 @@ go get github.com/jacobytes/regenFE
 package main
 
 import (
-    "fmt"
-    "github.com/jacobytes/regenFE"
+	"context"
+	"encoding/json"
+	"fmt"
+
+	regenfe "github.com/jacobytes/regenFE/regenFE"
 )
 
 func main() {
-    client := NewClient()
+
+	client := regenfe.NewClient()
+
 	ctx := context.Background()
-	options := ListOptions{
+	options := regenfe.ListOptions{
 		Page: 1,
 	}
 
-	results, _, err := client.Races.ListRaces(ctx, options) 
+	results, _, _ := client.Races.ListRaces(ctx, options)
+	json, _ := json.Marshal(results)
+	fmt.Println(string(json))
 }
 ```
 
