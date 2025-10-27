@@ -1,4 +1,4 @@
-# regenFE 
+# regenfe
 
 > Client for getting Formula E race data from https://fiaformulae.com/en/stats-centre.
 
