@@ -28,11 +28,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	regenfe "github.com/jacobytes/regenFE/regenFE"
+	"github.com/jacobytes/regenfe"
 )
 
 func main() {
-
 	client := regenfe.NewClient()
 
 	ctx := context.Background()
