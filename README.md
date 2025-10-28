@@ -44,6 +44,9 @@ func main() {
 }
 ```
 
+## Documentation
+Documentation on [pkg.go.dev](https://pkg.go.dev/github.com/jacobytes/regenfe).
+
 ## Tests
 
 Run all tests:
