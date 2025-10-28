@@ -14,8 +14,7 @@
 Use `go get` to install the package:
 
 ```bash
-go get github.com/jacobytes/regenFE
-
+go get github.com/jacobytes/regenfe
 ```
 
 ## Usage
